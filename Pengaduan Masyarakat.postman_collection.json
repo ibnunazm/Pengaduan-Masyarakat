@@ -46,7 +46,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nama\": \"Ibnu Nazm1\",\r\n    \"email\": \"ibnunazm.a12@gmail.com\",\r\n    \"alamat\": \"Kota Tangerang\",\r\n    \"no_telepon\": \"085776509353\"\r\n}",
+							"raw": "{\r\n    \"nama\": \"Ibnu Nazm\",\r\n    \"email\": \"ibnunazm.a@gmail.com\",\r\n    \"alamat\": \"Kota Tangerang\",\r\n    \"no_telepon\": \"085776509353\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -115,7 +115,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "2"
+									"value": "3"
 								}
 							]
 						}
@@ -225,6 +225,23 @@
 									"key": "id",
 									"value": "1"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countPetugas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/sumpetugas",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"sumpetugas"
 							]
 						}
 					},
@@ -341,6 +358,46 @@
 								{
 									"key": "id",
 									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "callPengaduanByStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/tampilanpengaduan",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tampilanpengaduan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sortPengaduan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/sortpengaduan?sort=asc",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"sortpengaduan"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "asc"
 								}
 							]
 						}
