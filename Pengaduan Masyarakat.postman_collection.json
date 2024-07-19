@@ -1,0 +1,490 @@
+{
+	"info": {
+		"_postman_id": "41751ba2-24f2-4965-9a83-835f483addc1",
+		"name": "Pengaduan Masyarakat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31457714",
+		"_collection_link": "https://solar-shuttle-645146.postman.co/workspace/Team-Workspace~45396285-d3b3-4f3f-8796-72a6cbb46893/collection/31457714-41751ba2-24f2-4965-9a83-835f483addc1?action=share&source=collection_link&creator=31457714"
+	},
+	"item": [
+		{
+			"name": "Masyarakat",
+			"item": [
+				{
+					"name": "getMasyarakat",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/masyarakat",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"masyarakat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createMasyarakat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Ibnu Nazm1\",\r\n    \"email\": \"ibnunazm.a12@gmail.com\",\r\n    \"alamat\": \"Kota Tangerang\",\r\n    \"no_telepon\": \"085776509353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/masyarakat",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"masyarakat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editMasyarakat",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Ibnu Nazm Edited\",\r\n    \"email\": \"ibnunazm.a11@gmail.com\",\r\n    \"alamat\": \"Kota Tangerang\",\r\n    \"no_telepon\": \"085776509353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/masyarakat/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"masyarakat",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMasyarakat",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/masyarakat/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"masyarakat",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Petugas",
+			"item": [
+				{
+					"name": "getPetugas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/petugas",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"petugas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPetugas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Fajar\",\r\n    \"email\": \"fajar.a11@gmail.com\",\r\n    \"alamat\": \"Kota Tangerang\",\r\n    \"no_telepon\": \"085776509353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/petugas",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"petugas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editPetugas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/petugas/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"petugas",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePetugas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/petugas/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"petugas",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pengaduan",
+			"item": [
+				{
+					"name": "getPengaduan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/pengaduan",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"pengaduan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPengaduan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"masyarakatId\": 6,\r\n    \"judul\": \"uji pengaduan\",\r\n    \"deskripsi\": \"uji pengaduan adalah pengujian yang di lakukan untuk mencoba api pengaduan\",\r\n    \"tanggal_pengaduan\": \"2024-07-19\",\r\n    \"status\": \"dilaporkan\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/pengaduan",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"pengaduan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editPetugas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"masyarakatId\": 6,\r\n    \"judul\": \"uji pengaduan Edited\",\r\n    \"deskripsi\": \"uji pengaduan adalah pengujian yang di lakukan untuk mencoba api pengaduan\",\r\n    \"tanggal_pengaduan\": \"19-07-2024\",\r\n    \"status\": \"ditanggapi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/pengaduan/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"pengaduan",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePengaduan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/pengaduan/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"pengaduan",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tanggapan",
+			"item": [
+				{
+					"name": "getTanggapan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/tanggapan",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tanggapan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createTanggapan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pengaduanId\": 4,\r\n    \"petugasId\": 2, \r\n    \"tanggapan\": \"saya sudah menanggapai pengaduan ini\",\r\n    \"tanggal_tanggapan\": \"19-07-2024\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/tanggapan",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tanggapan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editTanggapan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/tanggapan/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tanggapan",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTanggapan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/tanggapan/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tanggapan",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:8000",
+			"type": "string"
+		}
+	]
+}
